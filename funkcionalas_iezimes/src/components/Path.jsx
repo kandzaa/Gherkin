@@ -3,7 +3,7 @@ function Path() {
     return (
         <>
             <div className="w-full h-full grid p-4 m-4 bg-stone-700 rounded text-white items-center">
-                <h1 className="text-xl">Labais Scenārijs (angļu v. Happy Path Scenario)</h1>
+                <h1 className="text-xl text-green-600">Labais Scenārijs (angļu v. Happy Path Scenario)</h1>
                 <p>Paraugs:</p>
                 <div>
                     <p> - Lietotajs pievienojas ka autors</p>

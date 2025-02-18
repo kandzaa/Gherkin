@@ -3,7 +3,7 @@ function Rubik() {
     return (
         <>
             <div className="w-full h-full grid p-4 m-4 bg-stone-700 rounded text-white items-center">
-                <h1 className="text-xl">Rubiks paraugs</h1>
+                <h1 className="text-xl text-green-600">Rubiks paraugs</h1>
                 <p>Atļauj labāk saprast dažādus variantus savā kodā</p>
                 <div>
                 <p>
