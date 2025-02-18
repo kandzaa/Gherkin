@@ -1,14 +1,18 @@
 import "./App.css";
-
+import UserStory from "./components/UserStory";
+import Scenario from "./components/Scenario";
+import Path from "./components/Path";
+import Feature from "./components/Feature";
+import Rubik from "./components/Rubik";
 function App() {
 
   return (
     <>
     
     <div className="container mx-auto p-4 flex flex-col items-center">
-    <h1 className="text-[50px]  text-green-600 font-extrabold font-serif">Cucumba</h1>
+    <h1 className="text-[50px]  text-green-600 font-extrabold font-serif">Gherkin</h1>
       <table border="1" className="bg-stone-700 text-white border-collapse border border-white">
-        <thead>
+        <thead className="bg-green-600">
           <tr>
             <th className="border border-white p-2">Keyword</th>
             <th className="border border-white p-2">Equivalent(s)</th>
@@ -17,19 +21,19 @@ function App() {
         <tbody>
           <tr className="hover:bg-gray-700">
             <td className="border border-white p-2">Feature</td>
-            <td className="border border-white p-2">Funkcionalitāte, Fīča</td>
+            <td className="border border-white p-2">Funkcionālā iezīme</td>
           </tr>
           <tr className="hover:bg-gray-700">
             <td className="border border-white p-2">Background</td>
-            <td className="border border-white p-2">Konteksts, Situācija</td>
+            <td className="border border-white p-2">Konteksts</td>
           </tr>
           <tr className="hover:bg-gray-700">
-            <td className="border border-white p-2">Rule</td>
-            <td className="border border-white p-2">Rule</td>
+            <td className="border border-white p-2 line-through">Rule</td>
+            <td className="border border-white p-2 line-through" >Noteikums</td>
           </tr>
           <tr className="hover:bg-gray-700">
             <td className="border border-white p-2">Scenario</td>
-            <td className="border border-white p-2">Piemērs, Scenārijs</td>
+            <td className="border border-white p-2">Scenārijs</td>
           </tr>
           <tr className="hover:bg-gray-700">
             <td className="border border-white p-2">Scenario outline</td>
@@ -37,7 +41,7 @@ function App() {
           </tr>
           <tr className="hover:bg-gray-700">
             <td className="border border-white p-2">Examples</td>
-            <td className="border border-white p-2">Piemēri, Paraugs</td>
+            <td className="border border-white p-2">Piemēri</td>
           </tr>
           <tr className="hover:bg-gray-700">
             <td className="border border-white p-2">Given</td>
@@ -59,8 +63,17 @@ function App() {
             <td className="border border-white p-2">But</td>
             <td className="border border-white p-2">Bet</td>
           </tr>
+          <tr className="hover:bg-gray-700">
+            <td className="border border-white p-2">Or</td>
+            <td className="border border-white p-2">Vai</td>
+          </tr>
         </tbody>
       </table>
+      <Feature />
+      <UserStory />
+      <Scenario />
+      <Rubik />
+      <Path />
       </div>
     </>
   )
