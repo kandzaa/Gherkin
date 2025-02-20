@@ -67,6 +67,10 @@ function App() {
             <td className="border border-white p-2">Or</td>
             <td className="border border-white p-2">Vai</td>
           </tr>
+          <tr className="hover:bg-gray-700">
+            <td className="border border-white p-2">Notes</td>
+            <td className="border border-white p-2">Piezīmes</td>
+          </tr>
         </tbody>
       </table>
       <Feature />
